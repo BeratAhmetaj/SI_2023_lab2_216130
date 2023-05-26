@@ -1,6 +1,14 @@
 Berat Ahmetaj 216130
+
+--------------------------------
+
 ![CFG drawio](https://github.com/BeratAhmetaj/SI_2023_lab2_216130/assets/56788474/cbc88b30-bc41-4dfb-ba88-472fa7d64033)
+
+--------------------------------
+
 3. цикломатската комплексност е 9, стигнато е со броење на региони од горенаведеното CFG
+
+--------------------------------
 
 4. Одлука: if (user==null || user.getPassword()==null || user.getEmail()==null)
 Прва гранка: user==null
@@ -29,6 +37,8 @@ Berat Ahmetaj 216130
 Тест случај 9: existingUser = new User("existingUser", "password", "email@domain.com"), user = new User("username", "password", "email@domain.com")
 Втора гранка: сите услови се исполнети
 Тест случај 10: existingUser = new User("existingUser", "password", "existing@domain.com"), user = new User("username", "password", "email@domain.com") (повторно, за проверка на други делови од кодот)
+
+--------------------------------
 
 5. user==null, user.getPassword()==null, user.getEmail()==null
 Тест случај 1: user = null
