@@ -6,12 +6,12 @@
 
 --------------------------------
 
-3. цикломатската комплексност е 9, стигнато е со броење на региони од горенаведеното CFG
+3. цикломатската комплексност е 10, стигнато е со броење на региони од горенаведеното CFG
 
 --------------------------------
 
 4. Одлука: if (user==null || user.getPassword()==null || user.getEmail()==null)
-Прва гранка: user==null
+гранка: user==null
 Тест случај 1: user = null
 Втора гранка: user.getPassword()==null
 Тест случај 2: user = new User("username", null, "email")
@@ -21,19 +21,19 @@
 Тест случај 4: user = new User("username", "password", "email")
 Одлука: if (user.getUsername()==null)
 
-Прва гранка: user.getUsername()==null
+гранка: user.getUsername()==null
 Тест случај 5: user = new User(null, "password", "email")
 Втора гранка: сите услови се исполнети
 Тест случај 6: user = new User("username", "password", "email")
 Одлука: if (user.getEmail().contains("@") && user.getEmail().contains("."))
 
-Прва гранка: user.getEmail().contains("@") && user.getEmail().contains(".")
+гранка: user.getEmail().contains("@") && user.getEmail().contains(".")
 Тест случај 7: user = new User("username", "password", "email@domain.com")
 Втора гранка: сите услови се исполнети
 Тест случај 8: user = new User("username", "password", "email@domain.com") (повторно, за проверка на други делови од кодот)
 Одлука: if (existingUser.getEmail() == user.getEmail())
 
-Прва гранка: existingUser.getEmail() == user.getEmail()
+гранка: existingUser.getEmail() == user.getEmail()
 Тест случај 9: existingUser = new User("existingUser", "password", "email@domain.com"), user = new User("username", "password", "email@domain.com")
 Втора гранка: сите услови се исполнети
 Тест случај 10: existingUser = new User("existingUser", "password", "existing@domain.com"), user = new User("username", "password", "email@domain.com") (повторно, за проверка на други делови од кодот)
@@ -66,4 +66,3 @@ user!=null, user.getPassword()==null, user.getEmail()!=null
 user!=null, user.getPassword()!=null, user.getEmail()==null
 
 Тест случај 7: user = new User("username", "password", null)
-Објаснување: Први
