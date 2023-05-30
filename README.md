@@ -2,7 +2,8 @@
 
 --------------------------------
 
-![CFG drawio](https://github.com/BeratAhmetaj/SI_2023_lab2_216130/assets/56788474/cbc88b30-bc41-4dfb-ba88-472fa7d64033)
+
+![CFG](https://github.com/BeratAhmetaj/SI_2023_lab2_216130/assets/56788474/bcb8af20-e4d2-47b6-90e9-9b920a403050)
 
 --------------------------------
 
